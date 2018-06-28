@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME PAGE</title>
+  </head>
+  <body>
+    <h1>Below are the different types of shoes:</h1>
+    <%@shoes.each do |shoe|%>
+     <h3>Shoes number <a href="/shoes/<%=shoe[:id]%>"><%=shoe[:id]%></a></h3>
+   <%end%>
+  </body>
+</html>
